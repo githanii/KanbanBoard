@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Application",
+    "\\Application\\bin",
+    "\\Domain",
+    "\\Domain\\Entities"
+  ],
+  "SelectedNode": "\\Domain\\Entities\\Card.cs",
+  "PreviewInSolutionExplorer": false
+}
