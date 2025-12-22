@@ -173,7 +173,7 @@
         }
       }
     },
-    "/{listId}": {
+    "/api/Cards/{listId}": {
       "post": {
         "tags": [
           "Cards"
@@ -213,49 +213,9 @@
             "description": "OK"
           }
         }
-      },
-      "put": {
-        "tags": [
-          "Lists"
-        ],
-        "parameters": [
-          {
-            "name": "listId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateListDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateListDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateListDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
-    "/api/cards/{cardId}": {
+    "/api/Cards/api/cards/{cardId}": {
       "put": {
         "tags": [
           "Cards"
@@ -297,7 +257,7 @@
         }
       }
     },
-    "/{cardId}": {
+    "/api/Cards/{cardId}": {
       "delete": {
         "tags": [
           "Cards"
@@ -320,7 +280,7 @@
         }
       }
     },
-    "/api/cards/{cardId}/move": {
+    "/api/Cards/{cardId}/move": {
       "put": {
         "tags": [
           "Cards"
@@ -362,7 +322,7 @@
         }
       }
     },
-    "/{boardId}": {
+    "/api/Lists/{boardId}": {
       "post": {
         "tags": [
           "Lists"
@@ -404,7 +364,49 @@
         }
       }
     },
-    "/api/lists/{listId}": {
+    "/api/Lists/{listId}": {
+      "put": {
+        "tags": [
+          "Lists"
+        ],
+        "parameters": [
+          {
+            "name": "listId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateListDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateListDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateListDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lists/api/lists/{listId}": {
       "delete": {
         "tags": [
           "Lists"

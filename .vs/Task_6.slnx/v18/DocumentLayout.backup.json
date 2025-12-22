@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4414DF85-BDCB-FAB5-BAF2-5F23370E475F}|Intrastructure\\Intrastructure.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\intrastructure\\repository\\cardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4414DF85-BDCB-FAB5-BAF2-5F23370E475F}|Intrastructure\\Intrastructure.csproj|solutionrelative:intrastructure\\repository\\cardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\task_6\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2723629-CB10-55D5-52E1-30AA8CF10171}|Task_6\\WebApi.csproj|solutionrelative:task_6\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|c:\\users\\hanoo\\angularprojects\\task_6\\task_6\\application\\dtos\\listdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,59 +66,96 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_6\\appsettings.json",
+              "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\appsettings.json",
+              "RelativeToolTip": "Task_6\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T19:17:30.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Program.cs",
+              "RelativeDocumentMoniker": "Task_6\\Program.cs",
+              "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Program.cs",
+              "RelativeToolTip": "Task_6\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T19:17:10.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListController.cs",
+              "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\ListController.cs",
+              "RelativeDocumentMoniker": "Task_6\\Controllers\\ListController.cs",
+              "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\ListController.cs",
+              "RelativeToolTip": "Task_6\\Controllers\\ListController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:38:54.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BoardController.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\BoardController.cs",
               "RelativeDocumentMoniker": "Task_6\\Controllers\\BoardController.cs",
               "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\BoardController.cs",
               "RelativeToolTip": "Task_6\\Controllers\\BoardController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAEwBEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T09:39:20.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CardController.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\CardController.cs",
               "RelativeDocumentMoniker": "Task_6\\Controllers\\CardController.cs",
               "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\CardController.cs",
               "RelativeToolTip": "Task_6\\Controllers\\CardController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T09:39:35.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Task_6\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Task_6\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Task_6\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIAzwBIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:37:44.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:37:44.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CardRepository.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Intrastructure\\Repository\\CardRepository.cs",
               "RelativeDocumentMoniker": "Intrastructure\\Repository\\CardRepository.cs",
               "ToolTip": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Intrastructure\\Repository\\CardRepository.cs",
               "RelativeToolTip": "Intrastructure\\Repository\\CardRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAEwBAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:32:14.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:32:14.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "IDateTime.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Application\\Abstraction\\IDateTime.cs",
               "RelativeDocumentMoniker": "Application\\Abstraction\\IDateTime.cs",
@@ -114,12 +163,11 @@
               "RelativeToolTip": "Application\\Abstraction\\IDateTime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:29:13.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:29:13.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ListDto.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Application\\DTOs\\ListDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ListDto.cs",
@@ -127,12 +175,11 @@
               "RelativeToolTip": "Application\\DTOs\\ListDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAArwA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:28:43.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:28:43.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "DTO.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Application\\DTOs\\DTO.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\DTO.cs",
@@ -140,12 +187,11 @@
               "RelativeToolTip": "Application\\DTOs\\DTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:27:46.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:27:46.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CardDto.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Application\\DTOs\\CardDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\CardDto.cs",
@@ -153,12 +199,11 @@
               "RelativeToolTip": "Application\\DTOs\\CardDto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:27:40.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:27:40.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "BoardDto.cs",
               "DocumentMoniker": "C:\\Users\\hanoo\\AngularProjects\\Task_6\\Task_6\\Application\\DTOs\\BoardDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\BoardDto.cs",
@@ -166,8 +211,7 @@
               "RelativeToolTip": "Application\\DTOs\\BoardDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAArwA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:27:33.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T09:27:33.012Z"
             }
           ]
         }

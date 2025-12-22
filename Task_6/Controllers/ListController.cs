@@ -5,8 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
+    
     [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
     public class ListsController : ControllerBase
     {
         private readonly ListService _service;

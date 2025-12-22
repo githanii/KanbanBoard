@@ -17,3 +17,4 @@ C:\Users\hanoo\AngularProjects\Task_6\Task_6\Intrastructure\obj\Debug\net8.0\ref
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Intrastructure\obj\Debug\net8.0\Intrastructure.pdb
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Intrastructure\obj\Debug\net8.0\Intrastructure.genruntimeconfig.cache
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Intrastructure\obj\Debug\net8.0\ref\Intrastructure.dll
+C:\Users\hanoo\AngularProjects\Task_6\Task_6\Intrastructure\obj\Debug\net8.0\Intrastructure.sourcelink.json

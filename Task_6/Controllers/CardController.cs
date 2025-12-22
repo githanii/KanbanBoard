@@ -7,6 +7,7 @@ namespace WebApi.Controllers
 {
     [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
     public class CardsController : ControllerBase
     {
         private readonly CardService _service;
@@ -37,7 +38,7 @@ namespace WebApi.Controllers
             return ok ? NoContent() : Forbid();
         }
 
-        [HttpPut("api/cards/{cardId:int}/move")]
+        [HttpPut("{cardId:int}/move")]
         public async Task<IActionResult> Move(int cardId, MoveCardDto dto)
         {
             var ok = await _service.MoveAsync(cardId, dto.TargetListId, dto.TargetOrderIndex);

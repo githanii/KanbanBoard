@@ -189,3 +189,4 @@ C:\Users\hanoo\AngularProjects\Task_6\Task_6\Task_6\bin\Debug\net8.0\Microsoft.O
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Task_6\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Task_6\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Task_6\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hanoo\AngularProjects\Task_6\Task_6\Task_6\obj\Debug\net8.0\WebApi.sourcelink.json

@@ -1,84 +1,5 @@
 [
   {
-    "ContainingType": "WebApi.Controllers.ListsController",
-    "Method": "Create",
-    "RelativePath": "{boardId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "boardId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.CreateListDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApi.Controllers.CardsController",
-    "Method": "Delete",
-    "RelativePath": "{cardId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "cardId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApi.Controllers.CardsController",
-    "Method": "Create",
-    "RelativePath": "{listId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "listId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.CreateCardDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApi.Controllers.ListsController",
-    "Method": "Update",
-    "RelativePath": "{listId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "listId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.UpdateListDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WebApi.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -186,20 +107,15 @@
   },
   {
     "ContainingType": "WebApi.Controllers.CardsController",
-    "Method": "Update",
-    "RelativePath": "api/cards/{cardId}",
-    "HttpMethod": "PUT",
+    "Method": "Delete",
+    "RelativePath": "api/Cards/{cardId}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "cardId",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.UpdateCardDto",
         "IsRequired": true
       }
     ],
@@ -208,7 +124,7 @@
   {
     "ContainingType": "WebApi.Controllers.CardsController",
     "Method": "Move",
-    "RelativePath": "api/cards/{cardId}/move",
+    "RelativePath": "api/Cards/{cardId}/move",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -227,9 +143,93 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApi.Controllers.CardsController",
+    "Method": "Create",
+    "RelativePath": "api/Cards/{listId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.CreateCardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.CardsController",
+    "Method": "Update",
+    "RelativePath": "api/Cards/api/cards/{cardId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.UpdateCardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ListsController",
+    "Method": "Create",
+    "RelativePath": "api/Lists/{boardId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.CreateListDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ListsController",
+    "Method": "Update",
+    "RelativePath": "api/Lists/{listId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.UpdateListDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApi.Controllers.ListsController",
     "Method": "Delete",
-    "RelativePath": "api/lists/{listId}",
+    "RelativePath": "api/Lists/api/lists/{listId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -13,3 +13,4 @@ C:\Users\hanoo\AngularProjects\Task_6\Task_6\Application\obj\Debug\net8.0\Applic
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\hanoo\AngularProjects\Task_6\Task_6\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\hanoo\AngularProjects\Task_6\Task_6\Application\obj\Debug\net8.0\Application.sourcelink.json
