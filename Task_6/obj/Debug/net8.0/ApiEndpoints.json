@@ -107,6 +107,16 @@
   },
   {
     "ContainingType": "WebApi.Controllers.CardsController",
+    "Method": "getAll",
+    "RelativePath": "api/Cards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.CardsController",
     "Method": "Delete",
     "RelativePath": "api/Cards/{cardId}",
     "HttpMethod": "DELETE",
@@ -144,6 +154,27 @@
   },
   {
     "ContainingType": "WebApi.Controllers.CardsController",
+    "Method": "Update",
+    "RelativePath": "api/Cards/{cardId}/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.UpdateCardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.CardsController",
     "Method": "Create",
     "RelativePath": "api/Cards/{listId}",
     "HttpMethod": "POST",
@@ -165,27 +196,32 @@
   },
   {
     "ContainingType": "WebApi.Controllers.CardsController",
-    "Method": "Update",
-    "RelativePath": "api/Cards/api/cards/{cardId}",
-    "HttpMethod": "PUT",
+    "Method": "GetByListId",
+    "RelativePath": "api/Cards/list/{listId}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cardId",
+        "Name": "listId",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.UpdateCardDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi.Controllers.ListsController",
+    "ContainingType": "ListsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Lists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ListsController",
     "Method": "Create",
     "RelativePath": "api/Lists/{boardId}",
     "HttpMethod": "POST",
@@ -206,7 +242,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi.Controllers.ListsController",
+    "ContainingType": "ListsController",
     "Method": "Update",
     "RelativePath": "api/Lists/{listId}",
     "HttpMethod": "PUT",
@@ -227,9 +263,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi.Controllers.ListsController",
+    "ContainingType": "ListsController",
     "Method": "Delete",
-    "RelativePath": "api/Lists/api/lists/{listId}",
+    "RelativePath": "api/Lists/{listId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

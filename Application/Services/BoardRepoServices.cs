@@ -24,8 +24,7 @@ namespace Application.Services
         public Task<List<Board>> GetAllBoardsAsync() =>
             _repository.GetAllBoardsAsync();
 
-        public Task<Board?> GetBoardByIdAsync(int id) =>
-            _repository.GetBoardByIdAsync(id);
+     
 
         public Task<int> UpdateBoardAsync(Board board, int id) =>
             _repository.UpdateBoardAsync(board, id);

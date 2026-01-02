@@ -173,6 +173,41 @@
         }
       }
     },
+    "/api/Cards": {
+      "get": {
+        "tags": [
+          "Cards"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cards/list/{listId}": {
+      "get": {
+        "tags": [
+          "Cards"
+        ],
+        "parameters": [
+          {
+            "name": "listId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Cards/{listId}": {
       "post": {
         "tags": [
@@ -215,7 +250,7 @@
         }
       }
     },
-    "/api/Cards/api/cards/{cardId}": {
+    "/api/Cards/{cardId}/update": {
       "put": {
         "tags": [
           "Cards"
@@ -322,6 +357,18 @@
         }
       }
     },
+    "/api/Lists": {
+      "get": {
+        "tags": [
+          "Lists"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Lists/{boardId}": {
       "post": {
         "tags": [
@@ -404,9 +451,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Lists/api/lists/{listId}": {
+      },
       "delete": {
         "tags": [
           "Lists"

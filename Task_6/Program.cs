@@ -8,6 +8,7 @@ using Intrastructure.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
 using System.Text;
 using WebApi.Security;
 
@@ -26,11 +27,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
-        policy.WithOrigins(builder.Configuration["CORS:AllowedOrigins"]!)
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials());
+            );
 });
+
+
+
 
 // Auth services
 builder.Services.AddHttpContextAccessor();

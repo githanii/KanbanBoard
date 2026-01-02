@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.DTOs;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ namespace Application.Presistence
 {
     public interface IListRepository
     {
-        Task<List?>  GetByIdAsync(int Id);
+        Task<List?>  GetByIdAsync(int ListId);
+        Task<IEnumerable<List>> GetAllAsync();
         Task<IEnumerable<List>> GetAllByBoardAsync(int boardId);
         Task<int> AddAsync(List list);
         Task<int> DeleteAsync(int Id);

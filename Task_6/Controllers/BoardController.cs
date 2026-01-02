@@ -23,6 +23,8 @@ namespace WebApi.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
+        
+        
         {
             var userId = _user.GetCurrentUserId();
             var boards = await _services.GetMyBoardsAsync(userId);
@@ -37,6 +39,7 @@ namespace WebApi.Controllers
             return board == null ? NotFound() : Ok(board);
 
         }
+
             [HttpPost]
         public async Task<IActionResult> Create(CreateBoardDto dto)
         {

@@ -1,6 +1,8 @@
 ﻿using Application.Abstraction;
+using Application.DTOs;
 using Application.Presistence;
 using Domain.Entities;
+using System.Collections.Generic;
 using TeamBoards.Domain.Entities;
 
 namespace Application.Services
@@ -22,28 +24,33 @@ namespace Application.Services
 
         public async Task<Card?> CreateAsync(int listId, string title, string? description)
         {
-            var list = await _lists.GetByIdAsync(listId);
-            if (list == null) return null;
-
-            var board = await _boards.GetBoardByIdAsync(list.BoardId);
-            if (board == null || board.OwnerId != _user.GetCurrentUserId())
-                return null;
-
-            var max = await _cards.GetMaxOrderIndexAsync(listId);
-
-            var card = new Card
+            try
             {
-                ListId = listId,
-                Title = title,
-                Description = description,
-                OrderIndex = max + 1,
-                CreatedAt = DateTime.UtcNow,
-                CreatedById = _user.GetCurrentUserId(),
-                IsDeleted = false
-            };
+                var list = await _lists.GetByIdAsync(listId);
+                if (list == null) return null;
 
-            await _cards.AddAsync(card);
-            return card;
+             
+
+                var max = await _cards.GetMaxOrderIndexAsync(listId);
+
+                var card = new Card
+                {
+                    ListId = listId,
+                    Title = title,
+                    Description = description,
+                    OrderIndex = max + 1,
+                    CreatedAt = DateTime.UtcNow,
+                    CreatedById = _user.GetCurrentUserId(),
+                    IsDeleted = false
+                };
+
+                await _cards.AddAsync(card);
+                return card;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<bool> UpdateAsync(int cardId, string title, string? description)
@@ -73,14 +80,13 @@ namespace Application.Services
             var list = await _lists.GetByIdAsync(card.ListId);
             if (list == null) return false;
 
-            var board = await _boards.GetBoardByIdAsync(list.BoardId);
-            if (board == null || board.OwnerId != _user.GetCurrentUserId())
-                return false;
-
             card.IsDeleted = true;
             await _cards.Update(card, cardId);
+
             return true;
         }
+
+
 
         public async Task<bool> MoveAsync(int cardId, int targetListId, int targetOrderIndex)
         {
@@ -97,5 +103,35 @@ namespace Application.Services
             await _cards.ReorderOnMoveAsync(cardId, targetListId, targetOrderIndex);
             return true;
         }
+        public async Task<List<CardDto>> GetCardsAsync()
+        {
+            var cards = await _cards.GetAllAsync();
+
+
+            return cards.Select(l => new CardDto
+            {
+                Id = l.Id,
+                ListId = l.ListId,
+                Title = l.Title,
+                OrderIndex = l.OrderIndex
+
+            }).ToList();
+
+        }
+        public async Task<IEnumerable<Card>> GetCardsByListIdAsync(int listId)
+        {
+            var userId = _user.GetCurrentUserId();
+
+            var list = await _lists.GetByIdAsync(listId);
+            if (list == null) return Enumerable.Empty<Card>();
+
+            var board = await _boards.GetBoardByIdAsync(list.BoardId);
+            if (board == null || board.OwnerId != userId)
+            {
+                return Enumerable.Empty<Card>();
+            }
+
+            return await _cards.GetAllByListAsync(listId);
+        }
     }
-}
+    }

@@ -1,4 +1,5 @@
 ﻿using Application.Presistence;
+using Domain.Entities;
 using Intrastructure.Persistence;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
@@ -21,15 +22,35 @@ namespace Intrastructure.Repository
 
         public async Task<int> AddAsync(Card card)
         {
-          await _context.Cards.AddAsync(card);
-          return  await _context.SaveChangesAsync();
+            try
+            {
+                await _context.Cards.AddAsync(card);
+                return await _context.SaveChangesAsync();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<int> Delete(int Id)
         {
+            try
+            {
+                return await _context.Cards
+                    .Where(l => l.Id == Id)
+                    .ExecuteDeleteAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<IEnumerable<Card>> GetAllAsync()
+        {
             return await _context.Cards
-                .Where(c => c.Id == Id)
-                .ExecuteDeleteAsync();
+                .AsNoTracking()
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Card>> GetAllByListAsync(int ListId, bool IsDeleted)
@@ -39,6 +60,16 @@ namespace Intrastructure.Repository
                 .Where(c => c.ListId == ListId && c.IsDeleted == IsDeleted)
                 .OrderBy(c => c.OrderIndex)
                 .ToListAsync();
+        }
+
+        public  async Task<IEnumerable<Card>> GetAllByListAsync(int ListId)
+        {
+            return await _context.Cards
+                  .AsNoTracking()
+                  .Where(c => c.ListId == ListId && !c.IsDeleted) 
+                  .OrderBy(c => c.OrderIndex)
+                  .ToListAsync();
+        
         }
 
         public async Task<Card?> GetByIdAsync(int Id)
@@ -89,13 +120,12 @@ namespace Intrastructure.Repository
 
         public async Task<int> Update(Card card, int Id)
         {
-return await _context.Cards
-                .Where(c => c.Id == Id)
-                .ExecuteUpdateAsync(c => c
-                    .SetProperty(c => c.Title, card.Title)
-                    .SetProperty(c => c.Description, card.Description)
-                    .SetProperty(c => c.IsDeleted, card.IsDeleted)
-                );
+            _context.Cards.Update(card);
+                
+               
+            await _context.SaveChangesAsync();
+
+            return 1;
         }
 
         public async Task<int> UpdateOrderIndexAsync(int cardId, int newIndex)

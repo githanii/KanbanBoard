@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
@@ -29,7 +28,7 @@ namespace WebApi.Controllers
             _hasher = hasher;
             _tokens = tokens;
         }
-
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequestDto dto)
         {
@@ -97,16 +96,18 @@ namespace WebApi.Controllers
             });
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequestDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.UserName) ||
                 string.IsNullOrWhiteSpace(dto.Email) ||
                 string.IsNullOrWhiteSpace(dto.Password))
+                    
                 return BadRequest("All fields are required.");
 
-            if (dto.Password.Length < 6)
-                return BadRequest("Password must be at least 6 characters.");
+            if (dto.Password.Length < 8)
+                return BadRequest("Password must be at least 8 characters.");
 
             if (await _users.GetByUsernameAsync(dto.UserName) != null)
                 return Conflict("Username already exists.");

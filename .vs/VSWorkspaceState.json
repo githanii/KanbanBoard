@@ -2,10 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Application",
-    "\\Application\\bin",
+    "\\Application\\Abstraction",
     "\\Domain",
-    "\\Domain\\Entities"
+    "\\Domain\\Entities",
+    "\\Intrastructure",
+    "\\Task_6",
+    "\\Task_6\\Controllers",
+    "\\Task_6\\Security"
   ],
-  "SelectedNode": "\\Domain\\Entities\\Card.cs",
+  "SelectedNode": "\\Task_6\\Security\\UserContext.cs",
   "PreviewInSolutionExplorer": false
 }

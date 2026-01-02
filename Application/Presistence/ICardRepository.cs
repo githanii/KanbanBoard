@@ -10,8 +10,9 @@ namespace Application.Presistence
     public interface ICardRepository
     {
         Task<Card?> GetByIdAsync(int Id);
-        Task<IEnumerable<Card>> GetAllByListAsync(int ListId, bool IsDeleted);
-       
+        Task<IEnumerable<Card>> GetAllByListAsync(int ListId);
+        Task<IEnumerable<Card>> GetAllAsync();
+
         Task<int> AddAsync(Card card);
         Task<int> Update(Card card, int Id);
         Task<int> Delete(int Id);

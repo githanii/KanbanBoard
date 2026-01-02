@@ -13,7 +13,8 @@ namespace Domain.Entities
         public string Name { get; set; }= string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public int OwnerId { get; set; }
-
+        
         public List< List> Lists{ get; set; } = new();
+        public int UserId { get; set; }
     }
 }
