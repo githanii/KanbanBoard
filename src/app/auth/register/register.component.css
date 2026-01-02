@@ -1,0 +1,153 @@
+.signup-wrapper {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #191919 0%, #080808 100%);
+  padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 16px;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-footer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin: 0;
+}
+
+.auth-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #357abd;
+  text-decoration: underline;
+}
+.signup-card {
+  width: 420px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #2e2f30;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffffc7;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field label {
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0.8rem;
+  border-radius: 8px !important;
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+  background: #2563eb !important;
+}
+.field input {
+  height: 35px;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+
+}
+.field p-password {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.field input:focus, .field p-password:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.7);
+}
+.error-message {
+  color: #ff4d4f;
+  margin-top: 10px;
+  text-align: center;
+}
+.success-message {
+  color: #4BB543;
+  margin-top: 10px;
+  text-align: center;
+}
+.info-message {
+  color: #2196F3;
+  margin-top: 10px;
+  text-align: center;
+}
+/* Wrapper */
+.password-field {
+  position: relative;
+}
+
+/* Full width password */
+:host ::ng-deep .p-password {
+  width: 350px !important;
+}
+
+/* Input height + left padding */
+:host ::ng-deep .p-password-input {
+  height: 50px !important;
+  padding-left: 3rem !important;  /* space for eye */
+  padding-right: 1rem !important;
+}
+
+/* Eye icon on LEFT */
+:host ::ng-deep .p-password-toggle {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Hover effect */
+:host ::ng-deep .p-password-toggle:hover {
+  color: white;
+}

@@ -1,0 +1,30 @@
+
+
+<div class="login-wrapper">
+  <p-card class="login-card">
+    <h2 class="title">Login</h2>
+
+    <form (ngSubmit)="login()" class="form-grid">
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input pInputText id="username" [(ngModel)]="username" name="username" required />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <p-password [(ngModel)]="password" name="password" [toggleMask]="true"   [feedback]="false"
+required ></p-password>
+      </div>
+<div class="auth-footer">
+  <p>Don't have an account? <a routerLink="/register" class="auth-link">Register</a></p>
+</div>
+      <button pButton type="submit" label="Sign In" class="submit-btn"></button>
+
+    </form>
+
+  </p-card>
+  
+
+</div>
+

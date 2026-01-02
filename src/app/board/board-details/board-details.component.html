@@ -1,0 +1,83 @@
+<p-toast></p-toast>
+
+<div class="kanban-board">
+  <!-- Header -->
+  <div class="board-header">
+    <h1>{{ boardName }}</h1>
+    <button pButton type="button" label="Back" class="back-button" (click)="goBack()"></button>
+  </div>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+    <p>Loading board...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="!loading && errorMsg" class="error-container">
+    <i class="pi pi-exclamation-circle" style="font-size: 2rem; color: #e74c3c"></i>
+    <p>{{ errorMsg }}</p>
+    <button pButton label="Go Back" (click)="goBack()"></button>
+  </div>
+
+  <!-- Board Content -->
+  <div *ngIf="!loading && !errorMsg" class="board-content">
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button pButton type="button" label="+ Add List" class="add-list-btn" (click)="openAddListDialog()"></button>
+
+    </div>
+
+    <div class="lists-container">
+      <!-- Empty State -->
+      <div *ngIf="lists.length === 0" class="empty-board">
+        <i class="pi pi-inbox" style="font-size: 4rem; color: #6c757d; opacity: 0.5;"></i>
+        <p>No lists yet. Click "+ Add List" to get started.</p>
+      </div>
+
+      <!-- List Columns -->
+      <div *ngFor="let list of lists" class="list-column">
+        <div class="list-header">
+          <h2>{{list.title }}</h2>
+          <button pButton type="button" label="Delete" icon="pi pi-trash" class="deleteListBtn"
+            (click)="deleteList(list)"></button>
+        </div>
+
+        <div class="cards-container">
+          <!-- Cards -->
+          <div *ngFor="let card of list.cards" class="card-item">
+            <span>{{ card.title }}</span>
+            <button pButton type="button" label="Delete" icon="pi pi-trash" class="deleteCardBtn"
+              (click)="deleteCard(card.id, list.id)"></button>
+          </div>
+
+          <!-- Empty state for list -->
+          <div *ngIf="!list.cards || list.cards.length === 0" class="no-cards">
+            No cards yet
+          </div>
+        </div>
+
+        <!-- Add Card to List -->
+        <div class="add-card-inline">
+          <input pInputText [(ngModel)]="newCardTitles[list.id]" placeholder="+ Add a card"
+            (keyup.enter)="addCardToList(list.id, newCardTitles[list.id] || '')" class="card-input-inline" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add List Dialog -->
+  <p-dialog header="Create New List" [(visible)]="showAddList" [modal]="true" [dismissableMask]="true"
+    [style]="{ width: '400px','border':'1px solid black' }">
+    <div class="dialog-content">
+      <label class="label">List Name</label>
+      <input pInputText [(ngModel)]="newListName" placeholder="e.g. To Do" class="full-width"
+        (keyup.enter)="createList()" />
+    </div>
+
+    <ng-template pTemplate="footer">
+      <button pButton type="button" label="Create" class="p-button-text" (click)="createList()"></button>
+    </ng-template>
+  </p-dialog>
+
+</div>

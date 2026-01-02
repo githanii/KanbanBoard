@@ -1,0 +1,30 @@
+<div class="signup-wrapper">
+  <p-card class="signup-card">
+    <h2 class="title">Sign Up</h2>
+
+    <form (ngSubmit)="register()" class="form-grid">
+
+      <div class="field">
+        <label for="Email">Email</label>
+        <input pInputText id="Email" [(ngModel)]="Email" name="Email" required />
+      </div>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input pInputText id="username" [(ngModel)]="username" name="username" required />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <p-password [(ngModel)]="password" name="password" [toggleMask]="true" required></p-password>
+      </div>
+
+     <div class="auth-footer">
+  <p>Already have an account? <a routerLink="/login" class="auth-link">Sign In</a></p>
+</div>
+
+      <button pButton type="submit" label="Sign Up" class="submit-btn"></button>
+
+    </form>
+  </p-card>
+</div>

@@ -1,0 +1,81 @@
+<p-toast></p-toast>
+<p-confirmDialog></p-confirmDialog>
+
+<div class="kanban-board">
+
+  <!-- Topbar -->
+  <div class="board-header">
+    <div>
+      <h2>My Boards</h2>
+      <p class="muted">Manage your boards in one place</p>
+    </div>
+
+    <div class="actions">
+      <button pButton type="button" label="New Board" icon="pi pi-plus" (click)="openCreateDialog()"></button>
+
+    <button pButton type="button" label="Logout" icon="pi pi-sign-out" class="p-button-outlined logout-btn"
+      (click)="logout()"></button>
+
+    </div>
+  </div>
+
+  <!-- Boards Table -->
+  <p-table [value]="board" [paginator]="true" [rows]="10" [loading]="loading" [rowHover]="true"
+    responsiveLayout="scroll" class="board-table">
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width: 80px;">ID</th>
+        <th>Name</th>
+        <th style="width: 220px;">Actions</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-b>
+      <tr class="card-row">
+        <td>{{ b.id }}</td>
+
+        <td class="nameCell" (click)="openBoard(b.id)">
+          {{ b.name }}
+        </td>
+
+        <td>
+     
+
+          <button pButton type="button" icon="pi pi-trash" label="Delete" class="p-button-sm p-button-danger deleteBtn"
+            (click)="confirmDelete(b)"></button>
+        </td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="3" class="empty">No boards yet</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <!-- Create Board Dialog -->
+  <p-dialog header="Create Board" [(visible)]="showCreate" [modal]="true" [dismissableMask]="true"
+    [style]="{ width: '520px' }">
+    <div class="dialog-content">
+      <label class="label">Board Name</label>
+      <input pInputText [(ngModel)]="newBoardName" placeholder="e.g. Graduation Project" class="full-width" />
+    </div>
+
+    <ng-template pTemplate="footer">
+  <div class="dialog-footer">
+  
+
+   <button
+  pButton
+  type="button"
+  label="Create"
+  icon="pi pi-check"
+  (click)="createBoard()"
+  class="Create">
+</button>
+  </div>
+</ng-template>
+
+  </p-dialog>
+</div>

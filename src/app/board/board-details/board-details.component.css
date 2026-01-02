@@ -1,0 +1,354 @@
+.kanban-board {
+ min-height: 100vh;
+  background: linear-gradient(135deg, #191919 0%, #080808 100%);
+  padding: 20px;
+  color: white;
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.board-header {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.board-header h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-button {
+   background: rgba(255, 255, 255, 0.15) !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.board-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.add-list-btn {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+
+.add-list-btn:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+
+.p-button-text p-button-sm delete-list-btn {
+  padding: 4px !important;
+background-color: #d1d5db;  
+}
+
+.p-button-text p-button-sm delete-list-btn:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+} 
+
+.lists-container {
+  display: flex;
+  gap: 20px;
+  
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.empty-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;
+  color: white;
+  opacity: 0.7;
+}
+
+.empty-board p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.list-column {
+  min-width: 320px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - 200px);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.list-header h2 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.deleteListBtn {
+    background: rgba(255, 255, 255, 0.15) !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+.deleteListBtn:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+
+}
+
+.cards-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
+}
+
+.card-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-item:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-item span {
+  color: #1f2937;
+  font-size: 0.95rem;
+  display: block;
+}
+.deleteCardBtn {
+    background: rgba(255, 255, 255, 0.15) !important;
+  border: none !important;
+  color: rgb(219, 95, 95) !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 400 !important;
+  float: right;
+
+} 
+
+.no-cards {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.add-card-inline {
+  margin-top: auto;
+}
+
+.card-input-inline {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 6px !important;
+}
+
+.card-input-inline::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-input-inline:focus {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+:host ::ng-deep .p-dialog {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-left: 10px;
+  color: white;
+  
+}
+.label{
+  color: #f5f8fb;
+  padding-left: 10px;
+  font-weight: 600;
+}
+.full-width{
+  width: 75%;
+margin-left: 10px;
+height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+}
+
+:host ::ng-deep .p-dialog .p-dialog-header {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-weight: 600;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+.p-button-text {
+  min-width: 110px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 10px 20px;
+  height: 35px;
+  margin-bottom: 5px;
+  color: white;
+margin-right: 20px;
+}
+/* Scrollbar styling */
+.lists-container::-webkit-scrollbar,
+.cards-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.lists-container::-webkit-scrollbar-track,
+.cards-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.lists-container::-webkit-scrollbar-thumb,
+.cards-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.lists-container::-webkit-scrollbar-thumb:hover,
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Toast Notification - White Style */
+:host ::ng-deep .p-toast {
+  opacity: 1;
+}
+
+:host ::ng-deep .p-toast .p-toast-message {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #333;
+}
+
+/* Toast Message Content */
+:host ::ng-deep .p-toast .p-toast-message-content {
+  padding: 16px;
+  color: #333;
+}
+
+/* Toast Summary (Title) */
+:host ::ng-deep .p-toast .p-toast-summary {
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Toast Detail (Message) */
+:host ::ng-deep .p-toast .p-toast-detail {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Close Button */
+:host ::ng-deep .p-toast .p-toast-icon-close {
+  color: #666;
+}
+
+:host ::ng-deep .p-toast .p-toast-icon-close:hover {
+  color: #333;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Icon Colors for Different Severities */
+:host ::ng-deep .p-toast .p-toast-message-error .p-toast-message-icon {
+  color: #e74c3c;
+}
+
+:host ::ng-deep .p-toast .p-toast-message-success .p-toast-message-icon {
+  color: #27ae60;
+}
+
+:host ::ng-deep .p-toast .p-toast-message-info .p-toast-message-icon {
+  color: #3498db;
+}
+
+:host ::ng-deep .p-toast .p-toast-message-warn .p-toast-message-icon {
+  color: #f39c12;
+}
